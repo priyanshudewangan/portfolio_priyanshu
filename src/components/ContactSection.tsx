@@ -1,9 +1,17 @@
-import { motion } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 import { Mail, ArrowRight, MapPin, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { useState } from "react";
+import { useState, useRef } from "react";
 
 const ContactSection = () => {
+  const containerRef = useRef<HTMLElement>(null);
+  const { scrollYProgress } = useScroll({
+    target: containerRef,
+    offset: ["start end", "end start"],
+  });
+
+  const y = useTransform(scrollYProgress, [0, 1], ["-10%", "10%"]);
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -39,7 +47,7 @@ const ContactSection = () => {
     );
     window.location.href = `mailto:Priyanshudewagan2004@gmail.com?subject=${subject}&body=${body}`;
 
-    // Simulate API call delay
+    // simulate API call delay
     setTimeout(() => {
       setSubmitStatus("success");
       setIsSubmitting(false);
@@ -58,8 +66,25 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="section-padding bg-card">
-      <div className="container-custom">
+    <section
+      id="contact"
+      ref={containerRef}
+      className="section-padding bg-card relative overflow-hidden"
+    >
+      {/* Background Image with Parallax */}
+      <motion.div
+        style={{ y }}
+        className="absolute inset-0 w-full h-[120%] -top-[10%] z-0"
+      >
+        <img
+          src="/contact-bg.webp"
+          alt="Background Animation"
+          className="w-full h-full object-cover opacity-30"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-background opacity-80" />
+      </motion.div>
+
+      <div className="container-custom relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20">
           {/* Left - Contact Info */}
           <motion.div
