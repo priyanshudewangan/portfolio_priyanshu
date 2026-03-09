@@ -1,17 +1,71 @@
-# React + Vite
+# Priyanshu's Developer Portfolio 🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal portfolio! This is a modern, responsive, and highly interactive web application built to showcase my projects, skills, and professional journey.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Modern Tech Stack**: Built with React 19, TypeScript, and Vite for lightning-fast frontend performance.
+- **Stunning UI/UX**: Designed using Tailwind CSS and Radix UI primitives for a sleek, accessible, and beautiful interface.
+- **Smooth Animations**: Integrated with Framer Motion and Lenis for fluid scroll effects and micro-interactions.
+- **Fully Responsive**: Carefully crafted to look great on all devices, from mobile phones to ultra-wide desktop monitors.
+- **Immersive 3D Elements**: Uses Three.js for interactive and beautiful 3D graphics on the web.
 
-## React Compiler
+## 🛠️ Built With
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Framework**: [React](https://react.dev/) + [Vite](https://vitejs.dev/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Components**: [Radix UI](https://www.radix-ui.com/) & [shadcn/ui](https://ui.shadcn.com/)
+- **Animations**: [Framer Motion](https://motion.dev/)
+- **Smooth Scrolling**: [Lenis](https://lenis.studiofreight.com/)
+- **3D Graphics**: [Three.js](https://threejs.org/)
 
-## Expanding the ESLint configuration
+## 🚀 Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# portfolio_priyanshu
+To get a local development environment up and running, follow these simple steps.
+
+### Prerequisites
+
+Ensure you have Node.js and npm (or pnpm/yarn) installed on your system.
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/priyanshudewangan/priyanshu_portfolio.git
+   ```
+
+2. Navigate to the project directory:
+   ```bash
+   cd priyanshu_portfolio
+   ```
+
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+### Running Locally
+
+Start the local development server with Vite:
+
+```bash
+npm run dev
+```
+
+Open [http://localhost:5173](http://localhost:5173) in your browser to view the application in action!
+
+### Building for Production
+
+To create an optimized production build for deployment:
+
+```bash
+npm run build
+```
+
+## 📬 Contact Me
+
+Feel free to reach out if you're looking for a developer, have a question, or just want to connect!
+
+---
+
+*Designed & Built by Priyanshu Dewangan*
